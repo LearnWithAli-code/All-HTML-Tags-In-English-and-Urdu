@@ -1,0 +1,548 @@
+    <!DOCTYPE html>
+    <html lang="ur">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Html tags in English and Urdu</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            
+            body {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: #333;
+                line-height: 1.6;
+                padding: 20px;
+                min-height: 100vh;
+            }
+            
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                background: white;
+                border-radius: 15px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+            }
+            
+            header {
+                background: linear-gradient(90deg, #4CAF50, #2E7D32);
+                color: white;
+                padding: 30px;
+                text-align: center;
+                position: relative;
+            }
+            
+            .language-switcher {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                display: flex;
+                gap: 10px;
+            }
+            
+            .lang-btn {
+                background: rgba(255, 255, 255, 0.2);
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                color: white;
+                padding: 8px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+            
+            .lang-btn:hover {
+                background: rgba(255, 255, 255, 0.3);
+            }
+            
+            .lang-btn.active {
+                background: white;
+                color: #2E7D32;
+                font-weight: bold;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 10px;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+                opacity: 0.9;
+            }
+            
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 20px;
+            }
+            
+            .sidebar {
+                flex: 1;
+                min-width: 250px;
+                background: #f5f5f5;
+                padding: 20px;
+                border-radius: 10px;
+                margin-right: 20px;
+            }
+            
+            .main-content {
+                flex: 3;
+                min-width: 300px;
+            }
+            
+            .section {
+                background: white;
+                border-radius: 10px;
+                padding: 25px;
+                margin-bottom: 25px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+                border-left: 5px solid #4CAF50;
+            }
+            
+            h2 {
+                color: #2E7D32;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+                border-bottom: 2px dashed #e0e0e0;
+            }
+            
+            h3 {
+                color: #4CAF50;
+                margin: 15px 0 10px;
+            }
+            
+            .tag-list {
+                list-style-type: none;
+            }
+            
+            .tag-list li {
+                background: #e8f5e9;
+                margin: 8px 0;
+                padding: 10px 15px;
+                border-radius: 5px;
+                border-left: 4px solid #4CAF50;
+                transition: all 0.3s;
+            }
+            
+            .tag-list li:hover {
+                background: #c8e6c9;
+                transform: translateX(5px);
+            }
+            
+            .example {
+                background: #f9f9f9;
+                border: 1px solid #e0e0e0;
+                border-radius: 5px;
+                padding: 15px;
+                margin: 15px 0;
+                font-family: 'Courier New', monospace;
+                overflow-x: auto;
+            }
+            
+            footer {
+                text-align: center;
+                padding: 20px;
+                background: #2E7D32;
+                color: white;
+                margin-top: 20px;
+            }
+            
+            @media (max-width: 768px) {
+                .content {
+                    flex-direction: column;
+                }
+                
+                .sidebar {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+                
+                .language-switcher {
+                    position: static;
+                    justify-content: center;
+                    margin-top: 15px;
+                }
+                
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                header {
+                    padding: 20px 15px;
+                }
+                
+                .section {
+                    padding: 15px;
+                }
+                
+                h1 {
+                    font-size: 1.8rem;
+                }
+                
+                h2 {
+                    font-size: 1.4rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 id="main-title">HTML کے تمام ٹیگز</h1>
+                <p class="subtitle" id="subtitle">مکمل ریفرنس گائیڈ - اردو میں</p>
+                <div class="language-switcher">
+                    <button class="lang-btn active" id="urdu-btn">اردو</button>
+                    <button class="lang-btn" id="english-btn">English</button>
+                </div>
+            </header>
+            
+            <div class="content">
+                <div class="sidebar">
+                    <h2 id="toc-title">فہرست</h2>
+                    <ul class="tag-list">
+                        <li id="toc-item1">بنیادی ڈھانچہ کے ٹیگز</li>
+                        <li id="toc-item2">ہیڈنگ اور پیراگراف</li>
+                        <li id="toc-item3">فارمیٹنگ ٹیگز</li>
+                        <li id="toc-item4">لنکس اور امیجز</li>
+                        <li id="toc-item5">لِسٹ کے ٹیگز</li>
+                        <li id="toc-item6">ٹیبل کے ٹیگز</li>
+                        <li id="toc-item7">فارم کے ٹیگز</li>
+                        <li id="toc-item8">سیمینٹک ٹیگز</li>
+                        <li id="toc-item9">میڈیا ٹیگز</li>
+                    </ul>
+                </div>
+                
+                <div class="main-content">
+                    <div class="section">
+                        <h2 id="section1-title">بنیادی ڈھانچہ کے ٹیگز</h2>
+                        <div class="example">
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;head&gt;<br>
+                            &nbsp;&nbsp;&lt;title&gt;صفحہ کا عنوان&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &nbsp;&nbsp;&lt;h1&gt;میرا پہلا صفحہ&lt;/h1&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </div>
+                        
+                        <h3 id="section1-subtitle">وضاحت:</h3>
+                        <p id="section1-desc">ہر HTML دستاویز ان بنیادی ٹیگز سے شروع ہوتی ہے۔ &lt;!DOCTYPE html&gt; دستاویز کی قسم بتاتا ہے، &lt;html&gt; روٹ ایلیمنٹ ہے، &lt;head&gt; میں میٹا ڈیٹا ہوتا ہے، اور &lt;body&gt; میں صفحہ کا مواد ہوتا ہے۔</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h2 id="section2-title">ہیڈنگ اور پیراگراف</h2>
+                        <div class="example">
+                            &lt;h1&gt;سب سے بڑی ہیڈنگ&lt;/h1&gt;<br>
+                            &lt;h2&gt;چھوٹی ہیڈنگ&lt;/h2&gt;<br>
+                            &lt;h3&gt;اس سے چھوٹی ہیڈنگ&lt;/h3&gt;<br>
+                            &lt;h4&gt;...&lt;/h4&gt;<br>
+                            &lt;h5&gt;...&lt;/h5&gt;<br>
+                            &lt;h6&gt;سب سے چھوٹی ہیڈنگ&lt;/h6&gt;<br>
+                            &lt;p&gt;یہ ایک پیراگراف ہے۔&lt;/p&gt;
+                        </div>
+                        
+                        <h3 id="section2-subtitle">وضاحت:</h3>
+                        <p id="section2-desc">ہیڈنگز &lt;h1&gt; سے &lt;h6&gt; تک ہوتی ہیں، جہاں &lt;h1&gt; سب سے اہم اور بڑی ہیڈنگ ہے۔ &lt;p&gt; ٹیگز پیراگراف کے لیے استعمال ہوتے ہیں۔</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h2 id="section3-title">فارمیٹنگ ٹیگز</h2>
+                        <div class="example">
+                            &lt;b&gt;موٹا متن&lt;/b&gt;<br>
+                            &lt;i&gt;ترچھا متن&lt;/i&gt;<br>
+                            &lt;u&gt;انڈر لائن متن&lt;/u&gt;<br>
+                            &lt;strong&gt;اہم متن&lt;/strong&gt;<br>
+                            &lt;em&gt;زور دار متن&lt;/em&gt;<br>
+                            &lt;mark&gt;نمایاں متن&lt;/mark&gt;<br>
+                            &lt;small&gt;چھوٹا متن&lt;/small&gt;<br>
+                            &lt;del&gt;حذف شدہ متن&lt;/del&gt;<br>
+                            &lt;ins&gt;درج شدہ متن&lt;/ins&gt;<br>
+                            &lt;sub&gt;سب سکرپٹ&lt;/sub&gt;<br>
+                            &lt;sup&gt;سپر سکرپٹ&lt;/sup&gt;
+                        </div>
+                        
+                        <h3 id="section3-subtitle">وضاحت:</h3>
+                        <p id="section3-desc">یہ ٹیگز متن کو مختلف انداز میں ظاہر کرنے کے لیے استعمال ہوتے ہیں۔ &lt;strong&gt; اور &lt;em&gt; سیمنٹک معنی رکھتے ہیں جبکہ &lt;b&gt; اور &lt;i&gt; صرف ظاہری شکل بدلتے ہیں۔</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h2 id="section4-title">لنکس اور امیجز</h2>
+                        <div class="example">
+                            &lt;a href="https://example.com"&gt;ایک لنک&lt;/a&gt;<br>
+                            &lt;img src="image.jpg" alt="تصویر کی وضاحت"&gt;<br>
+                            &lt;map&gt; اور &lt;area&gt; امیج میپ کے لیے<br>
+                            &lt;figure&gt; اور &lt;figcaption&gt; تصویر کے گروپ کے لیے
+                        </div>
+                        
+                        <h3 id="section4-subtitle">وضاحت:</h3>
+                        <p id="section4-desc">&lt;a&gt; ٹیگ ہائپر لنکس بنانے کے لیے استعمال ہوتا ہے۔ &lt;img&gt; ٹیگ تصاویر شامل کرنے کے لیے استعمال ہوتا ہے، جہاں src خصوصیت تصویر کا راستہ بتاتی ہے اور alt خصوصیت متبادل متن فراہم کرتی ہے۔</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h2 id="section5-title">لِسٹ کے ٹیگز</h2>
+                        <div class="example">
+                            &lt;ul&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;پہلا آئٹم&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;دوسرا آئٹم&lt;/li&gt;<br>
+                            &lt;/ul&gt;<br><br>
+                            
+                            &lt;ol&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;پہلا آئٹم&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;دوسرا آئٹم&lt;/li&gt;<br>
+                            &lt;/ol&gt;<br><br>
+                            
+                            &lt;dl&gt;<br>
+                            &nbsp;&nbsp;&lt;dt&gt;اصطلاح&lt;/dt&gt;<br>
+                            &nbsp;&nbsp;&lt;dd&gt;وضاحت&lt;/dd&gt;<br>
+                            &lt;/dl&gt;
+                        </div>
+                        
+                        <h3 id="section5-subtitle">وضاحت:</h3>
+                        <p id="section5-desc">&lt;ul&gt; غیر ترتیب شدہ فہرست (bullet points)، &lt;ol&gt; ترتیب شدہ فہرست (نمبرڈ)، اور &lt;dl&gt; تفریقی فہرست (اصطلاح اور وضاحت) کے لیے استعمال ہوتے ہیں۔</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h2 id="section6-title">ٹیبل کے ٹیگز</h2>
+                        <div class="example">
+                            &lt;table&gt;<br>
+                            &nbsp;&nbsp;&lt;caption&gt;ٹیبل کا عنوان&lt;/caption&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;ہیڈر 1&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;ہیڈر 2&lt;/th&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &nbsp;&nbsp;&lt;tr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;ڈیٹا 1&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;ڈیٹا 2&lt;/td&gt;<br>
+                            &nbsp;&nbsp;&lt;/tr&gt;<br>
+                            &lt;/table&gt;
+                        </div>
+                        
+                        <h3 id="section6-subtitle">وضاحت:</h3>
+                        <p id="section6-desc">&lt;table&gt; ٹیبل بنانے کے لیے، &lt;tr&gt; قطار کے لیے، &lt;th&gt; ہیڈر سیل کے لیے، اور &lt;td&gt; عام ڈیٹا سیل کے لیے استعمال ہوتے ہیں۔</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h2 id="section7-title">فارم کے ٹیگز</h2>
+                        <div class="example">
+                            &lt;form action="/submit" method="post"&gt;<br>
+                            &nbsp;&nbsp;&lt;label for="name"&gt;نام:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&lt;input type="text" id="name" name="name"&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;label for="email"&gt;ای میل:&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&lt;input type="email" id="email" name="email"&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;&lt;br&gt;<br>
+                            &nbsp;&nbsp;&lt;button type="submit"&gt;جمع کرائیں&lt;/button&gt;<br>
+                            &lt;/form&gt;
+                        </div>
+                        
+                        <h3 id="section7-subtitle">وضاحت:</h3>
+                        <p id="section7-desc">فارم ٹیگز صارف سے ڈیٹا لینے کے لیے استعمال ہوتے ہیں۔ &lt;input&gt; مختلف قسم کے ان پٹ فیلسز بناتا ہے، &lt;textarea&gt; بڑے ٹیکسٹ ایریا کے لیے ہے، اور &lt;button&gt; بٹن کے لیے استعمال ہوتا ہے۔</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h2 id="section8-title">سیمینٹک ٹیگز</h2>
+                        <div class="example">
+                            &lt;header&gt;سربراہی&lt;/header&gt;<br>
+                            &lt;nav&gt;نیویگیشن&lt;/nav&gt;<br>
+                            &lt;main&gt;مرکزی مواد&lt;/main&gt;<br>
+                            &lt;section&gt;سیکشن&lt;/section&gt;<br>
+                            &lt;article&gt;مضمون&lt;/article&gt;<br>
+                            &lt;aside&gt;ضمنی مواد&lt;/aside&gt;<br>
+                            &lt;footer&gt;فوٹر&lt;/footer&gt;
+                        </div>
+                        
+                        <h3 id="section8-subtitle">وضاحت:</h3>
+                        <p id="section8-desc">سیمینٹک ٹیگز ویب صفحہ کے ڈھانچے کو بہتر طور پر بیان کرتے ہیں، جس سے سرچ انجنوں اور ایکسیسibiliٹی ٹولز کے لیے صفحہ کو سمجھنا آسان ہو جاتا ہے۔</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h2 id="section9-title">میڈیا ٹیگز</h2>
+                        <div class="example">
+                            &lt;audio controls&gt;<br>
+                            &nbsp;&nbsp;&lt;source src="audio.mp3" type="audio/mpeg"&gt;<br>
+                            &lt;/audio&gt;<br><br>
+                            
+                            &lt;video controls width="250"&gt;<br>
+                            &nbsp;&nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
+                            &lt;/video&gt;<br><br>
+                            
+                            &lt;iframe src="https://example.com"&gt;&lt;/iframe&gt;
+                        </div>
+                        
+                        <h3 id="section9-subtitle">وضاحت:</h3>
+                        <p id="section9-desc">&lt;audio&gt; اور &lt;video&gt; ٹیگز آڈیو اور ویڈیو مواد کے لیے استعمال ہوتے ہیں۔ &lt;iframe&gt; دوسرے ویب صفحات کو موجودہ صفحہ میں ایمبیڈ کرنے کے لیے استعمال ہوتا ہے۔</p>
+                    </div>
+                </div>
+            </div>
+            
+            <footer>
+                <p id="footer-text1">HTML کے تمام اہم ٹیگز - اردو میں وضاحت کے ساتھ</p>
+                <p id="footer-text2">یہ فائل HTML5 کے تمام اہم ٹیگز کو ظاہر کرتی ہے۔</p>
+            </footer>
+        </div>
+
+        <script>
+            // زبان کے بٹنز کو حاصل کریں
+            const urduBtn = document.getElementById('urdu-btn');
+            const englishBtn = document.getElementById('english-btn');
+            
+            // زبان کا ڈیٹا
+            const languageData = {
+                urdu: {
+                    mainTitle: "HTML کے تمام ٹیگز",
+                    subtitle: "مکمل ریفرنس گائیڈ - اردو میں",
+                    tocTitle: "فہرست",
+                    tocItems: [
+                        "بنیادی ڈھانچہ کے ٹیگز",
+                        "ہیڈنگ اور پیراگراف",
+                        "فارمیٹنگ ٹیگز",
+                        "لنکس اور امیجز",
+                        "لِسٹ کے ٹیگز",
+                        "ٹیبل کے ٹیگز",
+                        "فارم کے ٹیگز",
+                        "سیمینٹک ٹیگز",
+                        "میڈیا ٹیگز"
+                    ],
+                    sectionTitles: [
+                        "بنیادی ڈھانچہ کے ٹیگز",
+                        "ہیڈنگ اور پیراگراف",
+                        "فارمیٹنگ ٹیگز",
+                        "لنکس اور امیجز",
+                        "لِسٹ کے ٹیگز",
+                        "ٹیبل کے ٹیگز",
+                        "فارم کے ٹیگز",
+                        "سیمینٹک ٹیگز",
+                        "میڈیا ٹیگز"
+                    ],
+                    sectionSubtitles: [
+                        "وضاحت:",
+                        "وضاحت:",
+                        "وضاحت:",
+                        "وضاحت:",
+                        "وضاحت:",
+                        "وضاحت:",
+                        "وضاحت:",
+                        "وضاحت:",
+                        "وضاحت:"
+                    ],
+                    sectionDescriptions: [
+                        "ہر HTML دستاویز ان بنیادی ٹیگز سے شروع ہوتی ہے۔ &lt;!DOCTYPE html&gt; دستاویز کی قسم بتاتا ہے، &lt;html&gt; روٹ ایلیمنٹ ہے، &lt;head&gt; میں میٹا ڈیٹا ہوتا ہے، اور &lt;body&gt; میں صفحہ کا مواد ہوتا ہے۔",
+                        "ہیڈنگز &lt;h1&gt; سے &lt;h6&gt; تک ہوتی ہیں، جہاں &lt;h1&gt; سب سے اہم اور بڑی ہیڈنگ ہے۔ &lt;p&gt; ٹیگز پیراگراف کے لیے استعمال ہوتے ہیں۔",
+                        "یہ ٹیگز متن کو مختلف انداز میں ظاہر کرنے کے لیے استعمال ہوتے ہیں۔ &lt;strong&gt; اور &lt;em&gt; سیمنٹک معنی رکھتے ہیں جبکہ &lt;b&gt; اور &lt;i&gt; صرف ظاہری شکل بدلتے ہیں۔",
+                        "&lt;a&gt; ٹیگ ہائپر لنکس بنانے کے لیے استعمال ہوتا ہے۔ &lt;img&gt; ٹیگ تصاویر شامل کرنے کے لیے استعمال ہوتا ہے، جہاں src خصوصیت تصویر کا راستہ بتاتی ہے اور alt خصوصیت متبادل متن فراہم کرتی ہے۔",
+                        "&lt;ul&gt; غیر ترتیب شدہ فہرست (bullet points)، &lt;ol&gt; ترتیب شدہ فہرست (نمبرڈ)، اور &lt;dl&gt; تفریقی فہرست (اصطلاح اور وضاحت) کے لیے استعمال ہوتے ہیں۔",
+                        "&lt;table&gt; ٹیبل بنانے کے لیے، &lt;tr&gt; قطار کے لیے، &lt;th&gt; ہیڈر سیل کے لیے، اور &lt;td&gt; عام ڈیٹا سیل کے لیے استعمال ہوتے ہیں۔",
+                        "فارم ٹیگز صارف سے ڈیٹا لینے کے لیے استعمال ہوتے ہیں۔ &lt;input&gt; مختلف قسم کے ان پٹ فیلسز بناتا ہے، &lt;textarea&gt; بڑے ٹیکسٹ ایریا کے لیے ہے، اور &lt;button&gt; بٹن کے لیے استعمال ہوتا ہے۔",
+                        "سیمینٹک ٹیگز ویب صفحہ کے ڈھانچے کو بہتر طور پر بیان کرتے ہیں، جس سے سرچ انجنوں اور ایکسیسibiliٹی ٹولز کے لیے صفحہ کو سمجھنا آسان ہو جاتا ہے۔",
+                        "&lt;audio&gt; اور &lt;video&gt; ٹیگز آڈیو اور ویڈیو مواد کے لیے استعمال ہوتے ہیں۔ &lt;iframe&gt; دوسرے ویب صفحات کو موجودہ صفحہ میں ایمبیڈ کرنے کے لیے استعمال ہوتا ہے۔"
+                    ],
+                    footerText1: "HTML کے تمام اہم ٹیگز - اردو میں وضاحت کے ساتھ",
+                    footerText2: "یہ فائل HTML5 کے تمام اہم ٹیگز کو ظاہر کرتی ہے۔"
+                },
+                english: {
+                    mainTitle: "All HTML Tags",
+                    subtitle: "Complete Reference Guide - In English",
+                    tocTitle: "Table of Contents",
+                    tocItems: [
+                        "Basic Structure Tags",
+                        "Heading and Paragraph",
+                        "Formatting Tags",
+                        "Links and Images",
+                        "List Tags",
+                        "Table Tags",
+                        "Form Tags",
+                        "Semantic Tags",
+                        "Media Tags"
+                    ],
+                    sectionTitles: [
+                        "Basic Structure Tags",
+                        "Heading and Paragraph",
+                        "Formatting Tags",
+                        "Links and Images",
+                        "List Tags",
+                        "Table Tags",
+                        "Form Tags",
+                        "Semantic Tags",
+                        "Media Tags"
+                    ],
+                    sectionSubtitles: [
+                        "Explanation:",
+                        "Explanation:",
+                        "Explanation:",
+                        "Explanation:",
+                        "Explanation:",
+                        "Explanation:",
+                        "Explanation:",
+                        "Explanation:",
+                        "Explanation:"
+                    ],
+                    sectionDescriptions: [
+                        "Every HTML document starts with these basic tags. &lt;!DOCTYPE html&gt; declares the document type, &lt;html&gt; is the root element, &lt;head&gt; contains metadata, and &lt;body&gt; contains the page content.",
+                        "Headings range from &lt;h1&gt; to &lt;h6&gt;, where &lt;h1&gt; is the most important and largest heading. &lt;p&gt; tags are used for paragraphs.",
+                        "These tags are used to display text in different styles. &lt;strong&gt; and &lt;em&gt; have semantic meaning while &lt;b&gt; and &lt;i&gt; only change appearance.",
+                        "The &lt;a&gt; tag is used to create hyperlinks. The &lt;img&gt; tag is used to embed images, where the src attribute specifies the image path and the alt attribute provides alternative text.",
+                        "&lt;ul&gt; is for unordered lists (bullet points), &lt;ol&gt; for ordered lists (numbered), and &lt;dl&gt; for description lists (term and definition).",
+                        "&lt;table&gt; is used to create a table, &lt;tr&gt; for rows, &lt;th&gt; for header cells, and &lt;td&gt; for regular data cells.",
+                        "Form tags are used to collect data from users. &lt;input&gt; creates various input fields, &lt;textarea&gt; is for large text areas, and &lt;button&gt; is used for buttons.",
+                        "Semantic tags better describe the structure of a web page, making it easier for search engines and accessibility tools to understand the page.",
+                        "The &lt;audio&gt; and &lt;video&gt; tags are used for audio and video content. &lt;iframe&gt; is used to embed other web pages into the current page."
+                    ],
+                    footerText1: "All Important HTML Tags - With Explanation in English",
+                    footerText2: "This file demonstrates all important HTML5 tags."
+                }
+            };
+            
+            // زبان تبدیل کرنے کا فنکشن
+            function changeLanguage(lang) {
+                // بٹنز کی حالت اپ ڈیٹ کریں
+                if (lang === 'urdu') {
+                    urduBtn.classList.add('active');
+                    englishBtn.classList.remove('active');
+                } else {
+                    englishBtn.classList.add('active');
+                    urduBtn.classList.remove('active');
+                }
+                
+                // صفحہ کا مواد اپ ڈیٹ کریں
+                document.getElementById('main-title').textContent = languageData[lang].mainTitle;
+                document.getElementById('subtitle').textContent = languageData[lang].subtitle;
+                document.getElementById('toc-title').textContent = languageData[lang].tocTitle;
+                
+                // فہرست کے آئٹمز اپ ڈیٹ کریں
+                const tocItems = document.querySelectorAll('.tag-list li');
+                tocItems.forEach((item, index) => {
+                    item.textContent = languageData[lang].tocItems[index];
+                });
+                
+                // سیکشن کے عنوانات اپ ڈیٹ کریں
+                for (let i = 1; i <= 9; i++) {
+                    document.getElementById(`section${i}-title`).textContent = languageData[lang].sectionTitles[i-1];
+                    document.getElementById(`section${i}-subtitle`).textContent = languageData[lang].sectionSubtitles[i-1];
+                    document.getElementById(`section${i}-desc`).innerHTML = languageData[lang].sectionDescriptions[i-1];
+                }
+                
+                // فوٹر کا متن اپ ڈیٹ کریں
+                document.getElementById('footer-text1').textContent = languageData[lang].footerText1;
+                document.getElementById('footer-text2').textContent = languageData[lang].footerText2;
+                
+                // HTML کا لینگویج اٹریبیوٹ اپ ڈیٹ کریں
+                document.documentElement.lang = lang === 'urdu' ? 'ur' : 'en';
+            }
+            
+            // ایونٹ لسٹنرز شامل کریں
+            urduBtn.addEventListener('click', () => changeLanguage('urdu'));
+            englishBtn.addEventListener('click', () => changeLanguage('english'));
+            
+            // ڈیفالٹ زبان سیٹ کریں
+            changeLanguage('urdu');
+        </script>
+    </body>
+    </html>
